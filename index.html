@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripWan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<!-- header -->
+<div class="header fixed-top">
+  <nav class="navbar navbar-expand">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+      <div class="mynav-lg-nav">
+        <a class="px-3 nav-link active"href="#section1">選區景點</a>
+        <a class="px-3 nav-link" href="#section2">最新活動</a>
+        <a class="px-3 nav-link" href="#section3">觀光跟我走</a>
+        <a class="px-3 nav-link" href="#footer">聯絡我們</a>
+      </div>
+      <div class="mynav-icon">
+        <a class="px-4" href="#"><img src="images/icon_heart_hover.png" alt=""></a>
+        <a class="px-4 iconLogin-popup" href="#"><img src="images/icon_user.png" alt=""></a>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="mynav-sm-nav">
+    <a class="px-3 nav-link active"href="#section1">選區景點</a>
+    <a class="px-3 nav-link" href="#">最新活動</a>
+    <a class="px-3 nav-link" href="#">觀光跟我走</a>
+    <a class="px-3 nav-link" href="#">聯絡我們</a>
+  </div>  
+</div>
+
+  <!-- nav_login -->
+    <div class="logincontainer">
+      <div class="main-box login">
+        <h1>登入</h1>
+        <form action="">
+          <div class="input-box">
+            <span class="icon"><img src="images/icon_mail.png"></span>
+            <input type="email"required>
+            <label>電子郵件</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><img src="images/icon_password.png"></span>
+            <input type="password"required>
+            <label>密碼</label>
+          </div>
+          <div class="check">
+            <label><input type="checkbox">記住我</label>
+            <a href="#">忘記密碼</a>
+          </div>
+          <button type="submit" class="main-btn">Login</button>
+          <div class="register">
+            <p>還沒有帳號？<a href="#" class="register-Link">按這裡註冊！</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="main-box register">
+        <h1>註冊</h1>
+        <form action="">
+          <div class="input-box">
+            <span class="icon"><img src="images/icon_user.png"></span>
+            <input type="text"required>
+            <label>使用者名稱</label>
+          </div>				
+          <div class="input-box">
+            <span class="icon"><img src="images/icon_mail.png"></span>
+            <input type="email"required>
+            <label>電子郵件</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><img src="images/icon_password.png"></span>
+            <input type="password"required>
+            <label>密碼</label>
+          </div>
+          <div class="check">
+            <label><input type="checkbox">接受所有隱私規則</label>
+          </div>
+          <button type="submit" class="main-btn">註冊</button>
+          <div class="register">
+            <p>已經有帳號了？<a href="#" class="login-Link">按這登入！</a></p>
+          </div>
+        </form>
+      </div>		
+      <span class="close-icon">
+        <div><img src="images/icon_bx.png" alt=""></div>
+      </span>			
+
+    </div>
+<!-- banner -->
+  <div class="banner">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-4">
+          <div class="banner-txt">
+            <h1>發現</h1>
+            <h2>TAIWAN</h2>
+            <h2>BEAUTY</h2>
+          </div>          
+        </div>
+        <div class="col-lg-4">
+          <div class="container">
+            <div class="col-lg-12 d-flex">
+              <div class="banner-form mb-2">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected> 不限縣市</option>
+                  <option value="1">台北市</option>
+                  <option value="2">新北市</option>
+                  <option value="3">桃園市</option>
+                  <option value="4">新竹市</option>
+                  <option value="5">苗栗市</option>
+                  <option value="6">台北市</option>
+                  <option value="7">新北市</option>
+                  <option value="8">桃園市</option>
+                  <option value="9">新竹市</option>
+                  <option value="10">苗栗市</option>
+
+                </select>
+              </div>
+              <div class="banner-form">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>不限類別</option>
+                  <option value="1">觀光美食</option>
+                  <option value="2">觀光住宿</option>
+                  <option value="3">觀光玩樂</option>
+                </select>
+              </div>          
+            </div>
+            <div class="col-lg-12">
+              <input type="text"  class="icon-search form-control"placeholder="輸入關鍵字">              
+            </div>
+          </div>
+
+        </div>
+      </div>
+           
+      </div>
+    </div>
+
+  </div>
+<!-- section1  -->
+  <div id="section1" class="section1 mb-5">
+    <div class="container">
+      <div class="section1-title text-center py-5">
+        <h1>◆ 選區景點 ◆</h1>
+      </div>
+      <div class="row row-cols-lg-4 row-cols-md-2">
+        <div class="section1-country mb-2">
+          <div class="section1-card">
+            <figure class="imghvr-fade rounded">
+                  <img class="w-100" src="https://picsum.photos/250/150?random=6">
+                  <figcaption>
+                     <h1>北部</h1>
+                  </figcaption>
+                  <a href="#"></a>
+              </figure>
+          </div>
+        </div>
+        <div class="section1-country mb-2">
+          <div class="section1-card">
+            <figure class="imghvr-fade rounded">
+                  <img class="w-100" src="https://picsum.photos/250/150?random=7">
+                  <figcaption>
+                     <h1>中部</h1>
+                  </figcaption>
+                  <a href="#"></a>
+              </figure>
+          </div>
+        </div>
+        <div class="section1-country mb-2">
+          <div class="section1-card">
+            <figure class="imghvr-fade rounded">
+                  <img class="w-100" src="https://picsum.photos/250/150?random=8">
+                  <figcaption>
+                     <h1>南部</h1>
+                  </figcaption>
+                  <a href="#"></a>
+              </figure>
+          </div>
+        </div>
+        <div class="section1-country mb-2">
+          <div class="section1-card">
+            <figure class="imghvr-fade rounded">
+                  <img class="w-100" src="https://picsum.photos/250/150?random=9">
+                  <figcaption>
+                     <h1>東部</h1>
+                  </figcaption>
+                  <a href="#"></a>
+              </figure>
+          </div>
+        </div>                
+      </div>
+    </div>
+  </div>
+
+  </div>
+<!-- section2 -->
+  <div id="section2"  class="section2 py-5">
+    <div class="container">
+      <div class="section2-title text-center">
+        <h1>◆ 最新活動 ◆</h1>
+      </div>
+    <div class="container-fluid py-2">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <a class="h1 text-decoration-none text-white" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span>&lt;</span>
+                </a>
+            </div>
+            <div class="col">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="section2-info col-md py-2">
+                                    <h3>2023新北耶誕城</h3>
+                                    <p>開城日期:11/17~1/1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, laborum.</p>
+                                    <button class="my-more">了解更多</button>
+                                </div>
+                                <div class="col-md">
+                                    <img class="d-block img-fluid" src="https://picsum.photos/600/300?random=7">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="section2-info col-md py-2">
+                                    <h3>2023新北耶誕城</h3>
+                                    <p>開城日期:11/17~1/1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, laborum.</p>
+                                    <button class="my-more">了解更多</button>
+                                </div>
+                                <div class="col">
+                                    <img class="d-block img-fluid" src="https://picsum.photos/600/300?random=6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="section2-info col-md py-2">
+                                    <h3>2023新北耶誕城</h3>
+                                    <p>開城日期:11/17~1/1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, laborum.</p>
+                                    <button class="my-more">了解更多</button>
+                                </div>
+                                <div class="col">
+                                    <img class="d-block img-fluid" src="https://picsum.photos/600/300?random=5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <a class="h1 text-decoration-none text-white" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span>&gt;</span>
+                </a>
+            </div>
+        </div>
+    </div>      
+    </div>
+  </div>
+<!-- section3-1 -->
+<div class="section3 my-5">
+  <div class="container">
+    <div class="section3-title text-center">
+      <h1>◆ 觀光玩樂 ◆</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img1"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img2"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img3"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>    
+  </div>
+</div>
+
+
+<!-- section3-2 -->
+<div class="section3 my-5">
+  <div class="container">
+    <div class="section3-title text-center">
+      <h1>◆ 觀光玩樂 ◆</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img1"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img2"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img3"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>    
+  </div>
+</div>
+
+<!-- section3-3 -->
+<div class="section3 my-5">
+  <div class="container">
+    <div class="section3-title text-center">
+      <h1>◆ 觀光玩樂 ◆</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img1"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img2"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="imghvr-push-up w-100 h-100 rounded">
+          <div class="section3-1img3"></div>
+          <figcaption>
+            <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+          </figcaption>
+          <a href="#"><button class="my-more">了解更多</button></a>
+        </div>
+      </div>    
+  </div>
+</div>
+
+<div class="my-5"></div>
+<!-- footer -->
+<footer id="footer" class="text-white text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5>縣市專欄</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">規劃旅行</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-white">帶你玩全台</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">地圖與指南</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">觀光諮詢</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="mb-0">關注我們</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Facebook</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Instagram</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Youtube</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Line</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="copyright text-center p-3">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">TripWan.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- javascript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<body>
+</html>
